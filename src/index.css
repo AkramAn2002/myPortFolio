@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbarend ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbarend ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.5px;
+  animation: slideTop 0.7s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+.navbarend ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #14008e;
+  box-shadow: 0 4px 10px #14008e;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbarend ul li:hover:after {
+  width: 100%;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.textshadow {
+  text-shadow: 0 0 30px white, 0 0 5px white; /* Ajuste les valeurs selon tes besoins */
+}
+
+/* Style for the scrollbar track (the background part) */
+/* Apply the styles globally */
+/* Apply styles to the entire application */
+/* For Firefox */
+html,
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #14008e #010018; /* Thumb and Track colors */
+}
+
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #14008e;
+  box-shadow: 0 0 30px 5px #14008e;
+  border-radius: 10px;
+  border: 2px solid #000000;
+}
+
+::-webkit-scrollbar-track {
+  background: #010018;
+  box-shadow: 0 0 30px 5px #14008e;
+}
+#particles canvas {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@layer components {
+  /* Hide the thumb for WebKit browsers (Chrome, Safari, etc.) */
+  .range-slider::-webkit-slider-thumb {
+    @apply hidden; /* Hide the thumb */
+  }
+
+  /* Hide the thumb for Firefox */
+  .range-slider::-moz-range-thumb {
+    @apply hidden; /* Hide the thumb */
+  }
+
+  /* Hide the thumb for Internet Explorer and Edge */
+  .range-slider::-ms-thumb {
+    @apply hidden; /* Hide the thumb */
+  }
+
+  /* Optional: Adjust the track style */
+  .range-slider {
+    background: linear-gradient(to right, #14008e 40%, #06001c 40%);
+  }
+}
+.p-inputnumber-input {
+  background-color: transparent !important; /* Assure un fond transparent */
+}

@@ -1,0 +1,15 @@
+export { default as NavBar } from "./NavBar";
+export { default as ImageCircle } from "./ImageCircle";
+export { default as TextPart } from "./TextPart";
+export { default as SocialMedias } from "./SocialMedias";
+export { default as Button } from "./Button";
+export { default as EducationInfos } from "./EducationInfos";
+export { default as EducationContainer } from "./EducationContainer";
+export { default as DateContainer } from "./DateContainer";
+export { default as Projects } from "./Projects";
+export { default as Technicalskill } from "./Technicalskill";
+export { default as Professionalskill } from "./Professionalskill";
+export { default as Input } from "./Input";
+export { default as EndPage } from "./EndPage";
+export { default as AvatarSocialMedia } from "./AvatarSocialMedia";
+export { default as AvatarSocialMediaWhite } from "./AvatarSocialMediaWhite";
