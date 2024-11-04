@@ -6,12 +6,12 @@ import js from "../assets/images/sklisImages/js.png";
 import css from "../assets/images/sklisImages/css.png";
 import java from "../assets/images/sklisImages/java.png";
 import mySql from "../assets/images/sklisImages/mySql.png";
-import Mongos from "../assets/images/sklisImages/Mongos.png";
-import Tailwind from "../assets/images/sklisImages/Tailwind.png";
-import DaisyUi from "../assets/images/sklisImages/DaisyUi.png";
-import ReactJS from "../assets/images/sklisImages/ReactJS.png";
+import mongos from "../assets/images/sklisImages/Mongos.png";
+import tailwind from "../assets/images/sklisImages/Tailwind.png";
+import daisyui from "../assets/images/sklisImages/DaisyUi.png";
+import reactjs from "../assets/images/sklisImages/ReactJS.png";
 import express from "../assets/images/sklisImages/NodeExpress.png";
-import SpringBoot from "../assets/images/sklisImages/SpringBoot.png";
+import springBoot from "../assets/images/sklisImages/SpringBoot.png";
 import laravel from "../assets/images/sklisImages/laravel10.png";
 
 const Skills = () => {
@@ -30,16 +30,16 @@ const Skills = () => {
             <Technicalskill img={js} style={"w-[120px]"} txt={"JavaScript"} />
             <Technicalskill img={java} style={"w-[180px]"} txt={"Java"} />
             <Technicalskill img={mySql} style={"mt-[50%]"} />
-            <Technicalskill img={Mongos} style={"w-[220px]"} txt={"MongoDB"} />
+            <Technicalskill img={mongos} style={"w-[220px]"} txt={"MongoDB"} />
             <Technicalskill
               img={Tailwind}
               style={"w-[180px]"}
               txt={"Tailwind Css"}
             />
-            <Technicalskill img={DaisyUi} style={"mt-[50%]"} />
-            <Technicalskill img={ReactJS} style={"mt-[50%] w-[180px]"} />
+            <Technicalskill img={daisyui} style={"mt-[50%]"} />
+            <Technicalskill img={reactjs} style={"mt-[50%] w-[180px]"} />
             <Technicalskill img={express} style={"mt-[50%] w-[230px]"} />
-            <Technicalskill img={SpringBoot} style={"mt-[50%] w-[230px]"} />
+            <Technicalskill img={springBoot} style={"mt-[50%] w-[230px]"} />
             <Technicalskill img={laravel} style={"w-[150px]"} txt={"Laravel"} />
           </div>
         </div>
