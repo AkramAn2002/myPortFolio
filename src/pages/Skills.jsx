@@ -11,7 +11,7 @@ import tailwind from "../assets/images/sklisImages/Tailwind.png";
 import daisyui from "../assets/images/sklisImages/DaisyUi.png";
 import reactjs from "../assets/images/sklisImages/ReactJS.png";
 import express from "../assets/images/sklisImages/NodeExpress.png";
-import springBoot from "../assets/images/sklisImages/SpringBoot.png";
+import springBoot from "../assets/images/sklisImages/springBoot.png";
 import laravel from "../assets/images/sklisImages/laravel10.png";
 
 const Skills = () => {
