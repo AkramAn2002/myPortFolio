@@ -32,7 +32,7 @@ const Skills = () => {
             <Technicalskill img={mySql} style={"mt-[50%]"} />
             <Technicalskill img={mongos} style={"w-[220px]"} txt={"MongoDB"} />
             <Technicalskill
-              img={Tailwind}
+              img={tailwind}
               style={"w-[180px]"}
               txt={"Tailwind Css"}
             />
