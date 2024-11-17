@@ -4,7 +4,7 @@ import { Projects } from "../components";
 import img1 from "../assets/imagesProject/Jobster.png";
 const MyProjects = () => {
   return (
-    <div className="relative mt-20">
+    <div className="relative mt-20" id="Projects">
       {/* Make parent div relative for absolute positioning of background */}
       <h1 className="text-center mb-11 font-bold text-[30px]">My Projects</h1>
       <div className="flex items-center justify-center">

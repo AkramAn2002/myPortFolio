@@ -8,7 +8,9 @@
   margin: 0 20px;
   position: relative;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .navbarend ul li a {
   display: inline-block;
   text-decoration: none;

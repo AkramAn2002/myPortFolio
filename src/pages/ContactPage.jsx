@@ -48,7 +48,7 @@ const ContactPage = () => {
   };
   const toast = useRef(null);
   return (
-    <div className="relative mt-20">
+    <div className="relative mt-20" id="Contact Me">
       <Toast ref={toast} />
       {/* Make parent div relative for absolute positioning of background */}
       <h1 className="text-center mb-20 font-bold text-[30px] sm:text-[35px] md:text-[40px] lg:text-[45px] ">

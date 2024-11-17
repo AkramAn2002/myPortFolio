@@ -35,7 +35,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="h-auto">
+    <div className="h-auto" id="About me">
       <Particles
         id="tsparticles"
         init={particlesInit}

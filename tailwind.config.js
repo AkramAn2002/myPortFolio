@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        sm400: "400px", // Ajoute un point de rupture personnalisé à 400px
+      },
       boxShadow: {
         "custom-2px": "8px 8px 40px #14008e",
         "custom-3px": "20px 20px 50px #14008e",

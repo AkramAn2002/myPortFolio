@@ -6,7 +6,7 @@ import EndPage from "./EndPage";
 const EducationContainer = () => {
   return (
     <div className="flex items-center justify-start sm:ml-[10%] md:ml-[10%] ml-[2%] lg:justify-center lg:ml-[4.5%]  w-[90%] absolute">
-      <div className="flex items-center h-[160vh] w-[2px] bg-[#14008e] shadow-custom-2.5px border-[#14008e] sm:ml-20 lg:ml-0">
+      <div className="flex items-center  sm400:h-[170vh] h-[190vh]  w-[2px] bg-[#14008e] shadow-custom-2.5px border-[#14008e] sm:ml-20 lg:ml-0">
         <DateContainer
           date="2017"
           postionTop="lg:top-[10px]  top-3"
@@ -24,12 +24,12 @@ const EducationContainer = () => {
         />
         <DateContainer
           date="2023"
-          postionTop="lg:top-[630px] top-[690px]"
+          postionTop="lg:top-[660px] top-[750px]"
           margin="lg:ml-[-25px] ml-5"
         />
         <DateContainer
           date="2024"
-          postionTop="lg:top-[920px] top-[983px]"
+          postionTop="lg:top-[930px] top-[1100px]"
           margin="ml-5"
         />
       </div>
@@ -61,7 +61,7 @@ const EducationContainer = () => {
                 info={
                   " I earned my DEUST in Mathematics, Physics, and Computer Science from the Faculty of Sciences and Techniques, Settat."
                 }
-                height={"h-[200px] p-1"}
+                height={"h-[210px] p-1"}
                 maxWidth={"max-w-[70%]"}
               />
             </div>
@@ -73,7 +73,7 @@ const EducationContainer = () => {
                 info={
                   "I enrolled in the first year of the engineering cycle in Computer Science Engineering at the Faculty of Sciences and Techniques, Settat."
                 }
-                height={"h-[230px] p-1 "}
+                height={"h-[250px] sm:h-[230px] md:h-[230px] lg:h-[230px] p-1 "}
                 position1={"lg:text-end lg:ml-[85px] text-start ml-11"}
                 maxWidth={"max-w-[70%]"}
               />
@@ -89,7 +89,9 @@ const EducationContainer = () => {
                 info={
                   " Gained hands-on experience in software development and technical problem-solving. Contributed to real-world projects, enhancing my skills in coding, teamwork, and project management."
                 }
-                height={"h-[295px] lg:h-[250px] md:h-[250px] sm:h-[250px] p-1"}
+                height={
+                  "h-[330px] sm400:h-[300px] lg:h-[250px] md:h-[250px] sm:h-[250px] p-1"
+                }
                 maxWidth={"max-w-[70%]"}
               />
             </div>
@@ -102,7 +104,9 @@ const EducationContainer = () => {
                 info={
                   "Developed 'BlueBooks' a Laravel 10 and DaisyUI-based web application with two interfaces: one for clients and one for accountants"
                 }
-                height={"h-[250px] p-1"}
+                height={
+                  "h-[320px] sm400:h-[250px] sm:h-[250px] md:h-[250px] lg:h-[250px] p-1"
+                }
                 position1={"lg:text-end lg:ml-[85px] text-start ml-11"}
                 maxWidth={"max-w-[70%]"}
               />

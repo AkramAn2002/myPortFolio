@@ -16,8 +16,11 @@ import laravel from "../assets/images/sklisImages/laravel10.png";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center justify-center lg:mt-[620px] md:mt-[620px] sm:mt-[620px] mt-[650px] ">
-      <h1 className="text-center mb-8 font-bold text-[30px]">Skills</h1>
+    <div
+      className="flex flex-col items-center justify-center lg:mt-[700px] md:mt-[700px] sm:mt-[700px] mt-[780px] "
+      id="Skills"
+    >
+      <h1 className="text-center mb-14 font-bold text-[30px]">Skills</h1>
 
       <div className="grid lg:grid-row-[1fr_1fr] w-[100%] gap-14">
         <div className="flex items-center justify-center">

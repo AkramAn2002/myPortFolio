@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { InputText } from "primereact/inputtext";
 import { InputNumber } from "primereact/inputnumber";
 import { FloatLabel } from "primereact/floatlabel";
-import { classNames } from "primereact/utils";
 
 const Input = ({ value, label, icon, onChange, name }) => {
   const [padding, setPadding] = useState(5);
