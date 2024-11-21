@@ -74,7 +74,7 @@ const NavBar = () => {
                     <a
                       href={`#${page}`}
                       className={`nav-link text-white hover:text-[#14008e] transition-all duration-300 ${
-                        id === activeLinkId ? "!text-[#14008e] text-[22px]" : ""
+                        id === activeLinkId ? "!text-[#14008e] text-[20px]" : ""
                       }`}
                       onClick={() => {
                         handleSmoothScroll(page);

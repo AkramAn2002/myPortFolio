@@ -5,7 +5,7 @@ import EndPage from "./EndPage";
 
 const EducationContainer = () => {
   return (
-    <div className="flex items-center justify-start sm:ml-[10%] md:ml-[10%] ml-[2%] lg:justify-center lg:ml-[4.5%]  w-[90%] absolute">
+    <div className="flex items-center justify-start sm:ml-[10%] md:ml-[10%] ml-[2%] lg:justify-center lg:ml-[4.5%] w-[90%] absolute">
       <div className="flex items-center  sm400:h-[170vh] h-[190vh]  w-[2px] bg-[#14008e] shadow-custom-2.5px border-[#14008e] sm:ml-20 lg:ml-0">
         <DateContainer
           date="2017"

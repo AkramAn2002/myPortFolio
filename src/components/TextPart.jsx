@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js"; // Importer la bibliothèque
 import { SocialMedias, Button } from "./";
+import myCV from "../assets/Docs/CvAkram_ANOU(ENG).pdf";
 const TextPart = () => {
   useEffect(() => {
     // Initialiser Typed.js après le montage du composant
@@ -44,23 +45,17 @@ const TextPart = () => {
       <div className="lg:w-[25%] mt-6 md:w-[40%] sm:w-[50%] w-[60%]">
         <SocialMedias />
       </div>
-      <div className="mt-6 grid grid-cols-2 gap-2 lg:w-[25%] md:w-[40%] sm:w-[50%] w-[60%]">
-        <Button
-          colorBg="[#14008e]"
-          value="Hire me"
-          colorTxt="[#010018]"
-          borderColor="transparent hover:bg-[#14008e] hover:text-[#010018]"
-          hover1="tracking-wider"
-          hover2="shadow-custom-1.5px"
-        />
-        <Button
-          borderColor="#14008e"
-          value="Hire me"
-          colorTxt="[#14008e]"
-          colorBg="transparent hover:shadow-custom-1.5px"
-          hover1="bg-[#14008e]"
-          hover2="text-[#010018]"
-        />
+      <div className="mt-6 grid grid-cols-2 gap-2 w-[100%] sm400:w-[80%] sm:w-[70%] md:w-[50%] lg:[50%]">
+        <a href={myCV} download target="_blank">
+          <Button
+            colorBg="[#14008e]"
+            value="Download CV"
+            colorTxt="[#010018]"
+            borderColor="transparent hover:bg-[#14008e] hover:text-[#010018]"
+            hover1="tracking-wider"
+            hover2="shadow-custom-1.5px"
+          />
+        </a>
       </div>
       {/* Élément où le texte Typed.js sera inséré */}
     </div>
