@@ -24,11 +24,7 @@ const NavBar = () => {
     if (element) {
       // Calculer la position actuelle du défilement
       const newPosition = element.offsetTop - headerHeight; // offsetTop donne la distance du haut de la page
-      setPosition(newPosition); // Met à jour la position
-      console.log("positionne" + positionne);
-      console.log("position" + position);
-
-      // Effectuer le défilement
+      setPosition(newPosition);
       window.scrollTo({
         top: newPosition,
         behavior: "smooth",
@@ -66,28 +62,23 @@ const NavBar = () => {
               { id: 2, page: "Skills" },
               { id: 3, page: "Projects" },
               { id: 4, page: "Contact Me" },
-            ].map(
-              ({ page, id }) => (
-                console.log("id", id),
-                (
-                  <li key={id} onClick={() => setActiveLinkId(id)}>
-                    <a
-                      href={`#${page}`}
-                      className={`nav-link text-white hover:text-[#14008e] transition-all duration-300 ${
-                        id === activeLinkId ? "!text-[#14008e] text-[20px]" : ""
-                      }`}
-                      onClick={() => {
-                        handleSmoothScroll(page);
-                        setActiveLinkId(id);
-                        // Met à jour le lien actif
-                      }}
-                    >
-                      {page}
-                    </a>
-                  </li>
-                )
-              )
-            )}
+            ].map(({ page, id }) => (
+              <li key={id} onClick={() => setActiveLinkId(id)}>
+                <a
+                  href={`#${page}`}
+                  className={`nav-link text-white hover:text-[#14008e] transition-all duration-300 ${
+                    id === activeLinkId ? "!text-[#14008e] text-[20px]" : ""
+                  }`}
+                  onClick={() => {
+                    handleSmoothScroll(page);
+                    setActiveLinkId(id);
+                    // Met à jour le lien actif
+                  }}
+                >
+                  {page}
+                </a>
+              </li>
+            ))}
           </ul>
 
           {/* Bouton menu mobile */}
