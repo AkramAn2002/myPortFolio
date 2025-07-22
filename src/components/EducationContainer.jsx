@@ -34,7 +34,7 @@ const EducationContainer = () => {
         />
         <DateContainer
           date="2025"
-          postionTop="lg:top-[1230px] top-[1300px]"
+          postionTop="lg:top-[1230px] top-[1400px]"
           margin="ml-5"
         />
       </div>

@@ -16,7 +16,7 @@ const App = () => {
     <PrimeReactProvider>
       <div className="bg-[#010018]">
         <NavBar />
-        <div className="lg:mt-52 mt-16 grid grid-rows-1 gap-16">
+        <div className="lg:mt-52 mt-16 grid grid-rows-1 gap-16 ">
           <HomePage />
           <EducationPage />
           <Skills />
