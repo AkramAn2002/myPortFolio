@@ -6,7 +6,7 @@ import EndPage from "./EndPage";
 const EducationContainer = () => {
   return (
     <div className="flex items-center justify-start sm:ml-[10%] md:ml-[10%] ml-[2%] lg:justify-center lg:ml-[4.5%] w-[90%] absolute">
-      <div className="flex items-center  sm400:h-[170vh] h-[190vh]  w-[2px] bg-[#14008e] shadow-custom-2.5px border-[#14008e] sm:ml-20 lg:ml-0">
+      <div className="flex items-center  sm400:h-[190vh] h-[230vh]  w-[2px] bg-[#14008e] shadow-custom-2.5px border-[#14008e] sm:ml-20 lg:ml-0">
         <DateContainer
           date="2017"
           postionTop="lg:top-[10px]  top-3"
@@ -30,6 +30,11 @@ const EducationContainer = () => {
         <DateContainer
           date="2024"
           postionTop="lg:top-[930px] top-[1100px]"
+          margin="ml-5"
+        />
+        <DateContainer
+          date="2025"
+          postionTop="lg:top-[1230px] top-[1300px]"
           margin="ml-5"
         />
       </div>
@@ -111,6 +116,21 @@ const EducationContainer = () => {
                 maxWidth={"max-w-[70%]"}
               />
             </div>
+          </div>
+          <div className="grid grid-rows-1">
+            <div className="lg:h-[300px]"></div>
+            <EducationInfos
+              position1={"text-start ml-[58px]"}
+              title1={"InternShip"}
+              value={"HPS Maroc"}
+              info={
+                "Developed a Unix server monitoring platform at HPS using Spring Boot and React.js, with features like real-time metrics, alerts, and reporting."
+              }
+              height={
+                "h-[330px] sm400:h-[220px] lg:h-[250px] md:h-[250px] sm:h-[250px] p-1"
+              }
+              maxWidth={"max-w-[80%]"}
+            />
           </div>
         </div>
       </div>

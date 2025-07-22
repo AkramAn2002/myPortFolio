@@ -2,34 +2,36 @@ import { useRef, useState } from "react";
 import { FaCode } from "react-icons/fa";
 import logoAkram from "../assets/akramLOGO.png";
 
+const NAV_LINKS = [
+  { id: 0, page: "About me" },
+  { id: 1, page: "Education" },
+  { id: 2, page: "Skills" },
+  { id: 3, page: "Projects" },
+  { id: 4, page: "Contact Me" },
+];
+
 const NavBar = () => {
   const [clickRotation, setClickRotation] = useState(false);
-
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
   const [activeLinkId, setActiveLinkId] = useState(0);
-  const [position, setPosition] = useState(0);
-  const [positionne, setPositionne] = useState(0);
-  // const headerHeight = 0; // Hauteur de la navbar fixe (en pixels)
 
   const handleToggleDropdown = (e) => {
     e.preventDefault();
     setClickRotation(!clickRotation);
   };
 
-  const handleSmoothScroll = (id) => {
-    const element = document.getElementById(id);
+  const handleSmoothScroll = (id, page) => {
+    const element = document.getElementById(page);
     const headerHeight = 80; // Hauteur de la navbar fixe
 
     if (element) {
-      // Calculer la position actuelle du défilement
-      const newPosition = element.offsetTop - headerHeight; // offsetTop donne la distance du haut de la page
-      setPosition(newPosition);
+      const newPosition = element.offsetTop - headerHeight;
       window.scrollTo({
         top: newPosition,
         behavior: "smooth",
       });
-
+      setActiveLinkId(id);
       setClickRotation(false); // Ferme le menu mobile après le clic
     }
   };
@@ -56,23 +58,17 @@ const NavBar = () => {
         <div className="navbar-end pr-3 lg:flex lg:mr-8 navbarend">
           {/* Menu Desktop */}
           <ul className="hidden lg:flex flex-row gap-4">
-            {[
-              { id: 0, page: "About me" },
-              { id: 1, page: "Education" },
-              { id: 2, page: "Skills" },
-              { id: 3, page: "Projects" },
-              { id: 4, page: "Contact Me" },
-            ].map(({ page, id }) => (
-              <li key={id} onClick={() => setActiveLinkId(id)}>
+            {NAV_LINKS.map(({ page, id }) => (
+              <li key={id}>
                 <a
                   href={`#${page}`}
                   className={`nav-link text-white hover:text-[#14008e] transition-all duration-300 ${
                     id === activeLinkId ? "!text-[#14008e] text-[20px]" : ""
                   }`}
-                  onClick={() => {
-                    handleSmoothScroll(page);
-                    setActiveLinkId(id);
-                    // Met à jour le lien actif
+                  aria-current={id === activeLinkId ? "page" : undefined}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleSmoothScroll(id, page);
                   }}
                 >
                   {page}
@@ -101,21 +97,17 @@ const NavBar = () => {
         style={linkStyles}
       >
         <ul className="links flex flex-col gap-4 px-6 py-4" ref={linksRef}>
-          {[
-            { id: 1, page: "About me" },
-            { id: 2, page: "Education" },
-            { id: 3, page: "Skills" },
-            { id: 4, page: "Projects" },
-            { id: 5, page: "Contact Me" },
-          ].map(({ page, id }, index) => (
+          {NAV_LINKS.map(({ page, id }) => (
             <li key={id}>
               <a
                 href={`#${page}`}
-                className="nav-link text-white hover:text-[#14008e] transition-all duration-300"
-                onClick={() => {
-                  handleSmoothScroll(page);
-                  setActiveLinkId(id);
-                  // Met à jour le lien actif
+                className={`nav-link text-white hover:text-[#14008e] transition-all duration-300 ${
+                  id === activeLinkId ? "!text-[#14008e] text-[20px]" : ""
+                }`}
+                aria-current={id === activeLinkId ? "page" : undefined}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSmoothScroll(id, page);
                 }}
               >
                 {page}
